@@ -18,7 +18,7 @@ if(answerUs === resAnswerUs2) {
 funcQ();*/
 
 
-const newFunct = function(param1){
+/*const newFunct = function(param1){
   numb = param1;
   if(numb % 2 === 0){
     return 'true';
@@ -65,3 +65,32 @@ let answer = silesFunct(number1,number2);
 alert(answer);*/
 
 
+const calc = function(numb1, operator, number){
+  if( Number.isNaN(numb1 && number) ){
+    return('Введите числа');
+  }
+  switch(operator){
+    case'+':{
+      console.log(numb1 + number);
+      break;
+    }
+    case'-':{
+      console.log(numb1 - number);
+      break;
+    }
+      case'*':{
+        console.log(numb1 * number);
+        break;
+      }
+        case '/' :{
+          console.log(numb1 / number);
+          break;
+        }
+  
+}
+}
+const firstNumb = +prompt('Введите первое число');
+const oper = prompt('Введите оператор + - * /');
+const secondNumb = +prompt('Введите второе число');
+const resultCalc = calc(firstNumb, oper, secondNumb);
+console.log(resultCalc);
