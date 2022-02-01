@@ -65,7 +65,7 @@ let answer = silesFunct(number1,number2);
 alert(answer);*/
 
 
-const calc = function(numb1, operator, number){
+/*const calc = function(numb1, operator, number){
   if( Number.isNaN(numb1 && number) ){
     return('Введите числа');
   }
@@ -93,4 +93,57 @@ const firstNumb = +prompt('Введите первое число');
 const oper = prompt('Введите оператор + - * /');
 const secondNumb = +prompt('Введите второе число');
 const resultCalc = calc(firstNumb, oper, secondNumb);
-console.log(resultCalc);
+console.log(resultCalc);*/
+
+/*function absoluteNumber(parametr){
+  if (Number.isNaN(parametr)){
+    return('Введите число');
+  }
+  if(typeof{parametr} === 'undefined'){
+    return('Введите число');
+  }
+  if (parametr === 'false'){
+    return('Введите число');
+  }
+  if(parametr < (0)){
+    return( parametr * (-1));
+  }if(0 <= parametr){
+    return(parametr);
+  }if(typeof{parametr} === object){
+    return('Введите число');
+  }
+}
+const number = +prompt('Введите любое число');
+const resultAbsoluteNumber = absoluteNumber(number);
+console.log(resultAbsoluteNumber);*/
+
+/*for (let num = +prompt('Введите результат (2+2*2)=?');num !== 6; num = +prompt('Введите результат (2+2*2)=?')){
+  alert('Ответ не верный!');
+}*/
+/*let number = +prompt("Введите результат, 2+2*2=?");
+while (number){
+  if( number < 6 && number > 6 ){
+  }else if(number === 6) {
+    alert('Результат верный!')
+    break;
+  }
+  }*/
+
+
+
+  for (let num = +prompt('Введите результат (2+2*2)=?'); ; num = +prompt('Введите результат (2+2*2)=?')){
+    if(num !== 6){
+    alert('Ответ не верный!');}
+    else if(num === 6){
+      alert('Поздравляю, ответ верный!');
+      break;
+    }
+  }
+
+
+
+
+
+
+
+
